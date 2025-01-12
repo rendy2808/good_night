@@ -5,7 +5,7 @@ class ApplicationController < ActionController::API
 
   def validate_api_key
     api_key = request.headers['X-API-KEY']
-    valid_key = 'key-12345' # Or ENV['API_KEY'], for technical test purpose
+    valid_key = 'key-12345' # Or ENV['API_KEY'], for technical test purpose only
 
     render json: { error: 'Unauthorized' }, status: :unauthorized unless api_key == valid_key
   end
