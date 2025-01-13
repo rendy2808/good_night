@@ -6,6 +6,12 @@ Rails.application.routes.draw do
       resources :follow do
         post :unfollow, on: :collection
       end
+
+      resources :clock_in do
+        member do
+          get 'following_record', to: 'clock_in#following_record'
+        end
+      end
     end
   end
 end
