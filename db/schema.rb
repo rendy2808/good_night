@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_11_153414) do
 
   create_table "clock_ins", force: :cascade do |t|
     t.integer "user_id"
-    t.string "type"
+    t.integer "clock_in_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -33,4 +33,5 @@ ActiveRecord::Schema[7.1].define(version: 2025_01_11_153414) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
 end
