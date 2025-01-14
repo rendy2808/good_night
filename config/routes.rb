@@ -8,9 +8,7 @@ Rails.application.routes.draw do
       end
 
       resources :clock_in do
-        member do
-          get 'following_record', to: 'clock_in#following_record'
-        end
+        get :following_record, on: :collection
       end
     end
   end

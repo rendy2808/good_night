@@ -18,11 +18,13 @@ module Api
       end
 
       def following_record
-        user_id = params[:id]
+        user_id = params[:user_id]
 
         result = ClockInUseCase::RecordBuilder.new(user_id).perform
 
         render json: result, status: :ok
+      rescue => error
+        render json: { errors: error }, status: :unprocessable_entity
       end
 
       private
