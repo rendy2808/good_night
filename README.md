@@ -1,4 +1,4 @@
-# Project Name
+# Good Night
 
 ## Requirements
 
@@ -12,7 +12,7 @@ To run this project, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/rendy2808/good_night.git
    cd your-repo
    ```
 2. Install dependencies:
@@ -49,6 +49,11 @@ Start the Rails server:
 
 ```bash
 rails server
+```
+
+Spec (TEST):
+```bash
+bundle exec rspec spec/
 ```
 
 ## CURLs
